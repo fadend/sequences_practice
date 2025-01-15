@@ -1,0 +1,27 @@
+<html>
+<head>
+    <title>Practice your sequences, arithmetic and geometric</title>
+    <link href="sequences_practice.css" rel="stylesheet">
+</head>
+<body>
+    <button id="generate-button">Generate a sequence</button>
+    <div id="quiz" style="display: none">
+        Look at this sequence:
+        <div id="sequence"></div>
+        What type of sequence is it?
+        <br>
+        <label><input type="radio" name="answer-radio" id="arithmetic-answer-radio"> Arithmetic</label>
+        <br>
+        <label><input type="radio" name="answer-radio" id="geometric-answer-radio"> Geometric</label>
+        <div id="param-questions">
+            Find the values for:
+            <br>
+            a<sub>1</sub> = <input type="text" id="a1-answer"><span class="feedback" id="a1-answer-feedback"></span>
+            <br>
+            <span id="r-label">r</span> = <input type="text" id="r-answer"><span class="feedback" id="r-answer-feedback"></span>
+        </div>
+    </div>
+    <script src="deps/fraction.min.js"></script>
+    <script src="sequences_practice.js"></script>
+</body>
+</html>
