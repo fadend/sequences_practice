@@ -18,8 +18,11 @@ function show(elem) {
     elem.style.display = 'block';
 }
 
+const ERROR_COLOR = '#f99';
+const SUCCESS_COLOR = '#9f9';
+
 function markError(elem) {
-    elem.style.backgroundColor = 'red';
+    elem.style.backgroundColor = ERROR_COLOR;
 }
 
 function clearError(elem) {
@@ -49,9 +52,9 @@ class AnswerWithFeedback {
                 return;
             }
             if (oracle().equals(new Fraction(this.input.value))) {
-                setFeedback(this.feedbackElem, 'You got it!', 'green');
+                setFeedback(this.feedbackElem, 'You got it!', SUCCESS_COLOR);
             } else {
-                setFeedback(this.feedbackElem, 'Keep trying!', 'red');
+                setFeedback(this.feedbackElem, 'Keep trying!', ERROR_COLOR);
             }
         });
     }

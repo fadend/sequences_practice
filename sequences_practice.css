@@ -2,11 +2,14 @@
     margin-left: 10px;
 }
 #param-questions {
-    padding: 20px;
+    padding-top: 10px;
 }
 #quiz {
-    padding: 20px;
+    padding: 10px;
 }
 #sequence {
     padding: 20px;
+}
+#start-screen {
+    padding: 10px;
 }
